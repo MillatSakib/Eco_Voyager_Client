@@ -9,6 +9,8 @@ import Register from "./Auth/Register.jsx";
 import PrivateRoutes from "./PrivateRoutes/MainPrivateRoutes.jsx";
 import AuthPrivateRoute from "./PrivateRoutes/AuthPrivateRoute.jsx";
 import AddSpot from "./Add_Tourist_Spot/Add_spot.jsx";
+import MyList from "./My_list/MyList.jsx";
+import All from "./All_Tourist_Spot/All.jsx";
 // import ViewDetails from "./ViewDetails/ViewDetails.jsx";
 
 const PublicRotes = () => {
@@ -27,6 +29,10 @@ const PublicRotes = () => {
         //     element: <Home></Home>,
         //   },
         {
+          path: "/all_tourist_spot",
+          element: <All></All>,
+        },
+        {
           path: "/add_spot",
           element: (
             <PrivateRoutes>
@@ -34,14 +40,14 @@ const PublicRotes = () => {
             </PrivateRoutes>
           ),
         },
-        //   {
-        //     path: "/cart_estate",
-        //     element: (
-        //       <PrivateRoutes>
-        //         <CartEstate></CartEstate>
-        //       </PrivateRoutes>
-        //     ),
-        //   },
+        {
+          path: "/my_list",
+          element: (
+            <PrivateRoutes>
+              <MyList></MyList>
+            </PrivateRoutes>
+          ),
+        },
         {
           path: "/login",
           element: (

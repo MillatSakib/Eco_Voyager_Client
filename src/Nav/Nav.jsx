@@ -40,22 +40,31 @@ const Nav = () => {
                   Home
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/all_tourist_spot"
+                  className="font-semibold"
+                  onClick={() => setRouteState("/all_tourist_spot")}
+                >
+                  All Tourist Spot
+                </NavLink>
+              </li>
               <li className={user ? "" : "hidden"}>
                 <NavLink
                   to="/add_spot"
                   className="font-semibold"
-                  onClick={() => setRouteState("/update_profile")}
+                  onClick={() => setRouteState("/add_spot")}
                 >
                   Add Tourists Spot
                 </NavLink>
               </li>
               <li className={user ? "" : "hidden"}>
                 <NavLink
-                  to="/cart_estate"
+                  to="/my_list"
                   className="font-semibold"
-                  onClick={() => setRouteState("/cart_estate")}
+                  onClick={() => setRouteState("/my_list")}
                 >
-                  Cart Estate
+                  My List
                 </NavLink>
               </li>
             </ul>
@@ -79,11 +88,20 @@ const Nav = () => {
                 Home
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/all_tourist_spot"
+                className="font-semibold"
+                onClick={() => setRouteState("/all_tourist_spot")}
+              >
+                All Tourist Spot
+              </NavLink>
+            </li>
             <li className={user ? "" : "hidden"}>
               <NavLink
                 to="/add_spot"
                 className="font-semibold"
-                onClick={() => setRouteState("/update_profile")}
+                onClick={() => setRouteState("/add_spot")}
               >
                 Add Tourists Spot
               </NavLink>
@@ -91,11 +109,11 @@ const Nav = () => {
 
             <li className={user ? "" : "hidden"}>
               <NavLink
-                to="/cart_estate"
+                to="/my_list"
                 className="font-semibold"
-                onClick={() => setRouteState("/cart_estate")}
+                onClick={() => setRouteState("/my_list")}
               >
-                Cart Estate
+                My List
               </NavLink>
             </li>
           </ul>
