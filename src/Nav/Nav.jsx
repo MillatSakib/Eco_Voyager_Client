@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import LoginNav from "./LoginNav";
 import LogoutNav from "./LogoutNav";
 import { AuthContext } from "../AuthProvider";
