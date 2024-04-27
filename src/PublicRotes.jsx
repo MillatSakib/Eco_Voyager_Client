@@ -1,4 +1,4 @@
-// import NotFoundPage from "./ErroPage/NotFound.jsx";
+import NotFoundPage from "./ErroPage/NotFound.jsx";
 import { createBrowserRouter } from "react-router-dom";
 import Tamplate from "./Tamplate.jsx";
 // import Home from "./Home/Home.jsx";
@@ -15,7 +15,7 @@ const PublicRotes = () => {
     {
       path: "/",
       element: <Tamplate></Tamplate>,
-      // errorElement: <NotFoundPage></NotFoundPage>,
+      errorElement: <NotFoundPage></NotFoundPage>,
       // children: [
       //   {
       //     path: "/",
