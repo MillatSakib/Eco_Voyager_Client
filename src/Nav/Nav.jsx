@@ -42,11 +42,11 @@ const Nav = () => {
               </li>
               <li className={user ? "" : "hidden"}>
                 <NavLink
-                  to="/update_profile"
+                  to="/add_spot"
                   className="font-semibold"
                   onClick={() => setRouteState("/update_profile")}
                 >
-                  Update Profile
+                  Add Tourists Spot
                 </NavLink>
               </li>
               <li className={user ? "" : "hidden"}>
@@ -81,11 +81,11 @@ const Nav = () => {
             </li>
             <li className={user ? "" : "hidden"}>
               <NavLink
-                to="/update_profile"
+                to="/add_spot"
                 className="font-semibold"
                 onClick={() => setRouteState("/update_profile")}
               >
-                Update Profile
+                Add Tourists Spot
               </NavLink>
             </li>
 

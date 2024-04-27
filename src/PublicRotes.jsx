@@ -6,8 +6,9 @@ import Tamplate from "./Tamplate.jsx";
 // import CartEstate from "./CartEstate/CartEstate.jsx";
 import Login from "./Auth/Login.jsx";
 import Register from "./Auth/Register.jsx";
-// import PrivateRoutes from "./PrivateRoutes/MainPrivateRoutes.jsx";
-// import AuthPrivateRoute from "./PrivateRoutes/AuthPrivateRoute.jsx";
+import PrivateRoutes from "./PrivateRoutes/MainPrivateRoutes.jsx";
+import AuthPrivateRoute from "./PrivateRoutes/AuthPrivateRoute.jsx";
+import AddSpot from "./Add_Tourist_Spot/Add_spot.jsx";
 // import ViewDetails from "./ViewDetails/ViewDetails.jsx";
 
 const PublicRotes = () => {
@@ -25,14 +26,14 @@ const PublicRotes = () => {
         //       ),
         //     element: <Home></Home>,
         //   },
-        //   {
-        //     path: "/update_profile",
-        //     element: (
-        //       <PrivateRoutes>
-        //         <UpdateProfile></UpdateProfile>
-        //       </PrivateRoutes>
-        //     ),
-        //   },
+        {
+          path: "/add_spot",
+          element: (
+            <PrivateRoutes>
+              <AddSpot></AddSpot>
+            </PrivateRoutes>
+          ),
+        },
         //   {
         //     path: "/cart_estate",
         //     element: (
@@ -44,17 +45,17 @@ const PublicRotes = () => {
         {
           path: "/login",
           element: (
-            // <AuthPrivateRoute>
-            <Login></Login>
-            // </AuthPrivateRoute>
+            <AuthPrivateRoute>
+              <Login></Login>
+            </AuthPrivateRoute>
           ),
         },
         {
           path: "/register",
           element: (
-            // <AuthPrivateRoute>
-            <Register></Register>
-            // </AuthPrivateRoute>
+            <AuthPrivateRoute>
+              <Register></Register>
+            </AuthPrivateRoute>
           ),
         },
         //   {
