@@ -21,7 +21,7 @@ function SwipeBanner() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper w-full"
+        className="mySwiper w-full select-none"
       >
         <SwiperSlide>
           <img

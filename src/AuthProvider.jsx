@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { createContext } from "react";
 import { auth } from "./firebase.config";
 import { updateProfile } from "firebase/auth";
@@ -12,7 +12,6 @@ import {
 } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { GithubAuthProvider } from "firebase/auth";
-import { useAsyncError } from "react-router-dom";
 
 export const AuthContext = createContext(null);
 
