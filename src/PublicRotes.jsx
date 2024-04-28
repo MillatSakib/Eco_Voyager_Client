@@ -9,6 +9,7 @@ import AuthPrivateRoute from "./PrivateRoutes/AuthPrivateRoute.jsx";
 import AddSpot from "./Add_Tourist_Spot/Add_spot.jsx";
 import MyList from "./My_list/MyList.jsx";
 import All from "./All_Tourist_Spot/All.jsx";
+import MyAddedSpotEdit from "./My_added_spot_edit/MyAddedSpotEdit.jsx";
 // import ViewDetails from "./ViewDetails/ViewDetails.jsx";
 
 const PublicRotes = () => {
@@ -64,6 +65,17 @@ const PublicRotes = () => {
             </AuthPrivateRoute>
           ),
         },
+        {
+          path: "/my-added-spot-edit/:id",
+          element: (
+            <PrivateRoutes>
+              <MyAddedSpotEdit></MyAddedSpotEdit>
+            </PrivateRoutes>
+          ),
+          loader: ({ params }) =>
+            fetch(`https://voyager-omega.vercel.app/myAddedSpot/${params.id}`),
+        },
+
         //   {
         //     path: "/property/:propertyID",
         //     element: (

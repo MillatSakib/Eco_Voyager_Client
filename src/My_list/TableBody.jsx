@@ -1,5 +1,6 @@
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 import swal from "sweetalert";
 
 const TableBody = ({ myData, index, loadApi, setLoadApi }) => {
@@ -49,7 +50,9 @@ const TableBody = ({ myData, index, loadApi, setLoadApi }) => {
         <td>{myData.country_name}</td>
         <td>{myData.location}</td>
         <td className="">
-          <FaEdit className="cursor-pointer p-2 text-4xl text-green-600 hover:bg-slate-200 rounded-2xl select-none" />
+          <NavLink to={`/my-added-spot-edit/${myData?._id}`}>
+            <FaEdit className="cursor-pointer p-2 text-4xl text-green-600 hover:bg-slate-200 rounded-2xl select-none" />
+          </NavLink>
         </td>
 
         <td className="">
