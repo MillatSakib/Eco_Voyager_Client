@@ -51,7 +51,7 @@ const Footer = () => {
           </a>
         </div>
         <img
-          src="https://raw.githubusercontent.com/MillatSakib/img-src/main/assignment%209/logo.png"
+          src="https://millatsakib.github.io/img-src/Assignment10/logo.png"
           className="h-12"
         ></img>
 

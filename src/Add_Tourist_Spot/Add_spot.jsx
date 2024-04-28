@@ -46,7 +46,7 @@ const AddSpot = () => {
       description,
     };
 
-    fetch("https://voyager-omega.vercel.app/assSpot", {
+    fetch("https://voyager-omega.vercel.app/addSpot", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -54,7 +54,7 @@ const AddSpot = () => {
       body: JSON.stringify(spotDetails),
     })
       .then((res) => res.json())
-      .then((data) => {
+      .then(() => {
         toast.success("Successfully added this spot!", {
           position: "bottom-right",
           autoClose: 5000,

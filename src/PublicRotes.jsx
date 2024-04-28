@@ -28,6 +28,8 @@ const PublicRotes = () => {
         },
         {
           path: "/all_tourist_spot",
+          loader: () =>
+            fetch("https://voyager-omega.vercel.app/allTouristSpots"),
           element: <All></All>,
         },
         {
