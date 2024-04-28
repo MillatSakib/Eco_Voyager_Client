@@ -5,6 +5,7 @@ import { AuthContext } from "../AuthProvider";
 const MyAddedTouristSpot = () => {
   const [myListData, setMyListData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [loadApi, setLoadApi] = useState(false);
   const { user } = useContext(AuthContext);
   useEffect(() => {
     fetch(`https://voyager-omega.vercel.app/my_added_spot/${user?.email}`)
@@ -13,7 +14,7 @@ const MyAddedTouristSpot = () => {
         setLoading(false);
         setMyListData(data);
       });
-  }, []);
+  }, [loadApi]);
 
   return (
     <>
@@ -44,6 +45,8 @@ const MyAddedTouristSpot = () => {
                       myData={myData}
                       key={index}
                       index={index}
+                      loadApi={loadApi}
+                      setLoadApi={setLoadApi}
                     ></TableBody>
                   );
                 })}

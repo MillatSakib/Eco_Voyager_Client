@@ -1,7 +1,34 @@
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import swal from "sweetalert";
 
-const TableBody = ({ myData, index }) => {
+const TableBody = ({ myData, index, loadApi, setLoadApi }) => {
+  const handleDelete = () => {
+    console.log("hello");
+    swal({
+      title: "Are you sure?",
+      text: "If click delete, you will not be able to recover this data again!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        fetch(`https://voyager-omega.vercel.app/myAddedSpot/${myData?._id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then(() => {
+            const temp = loadApi;
+            setLoadApi(!temp);
+            swal("Your Data has been deleted!", {
+              icon: "success",
+            });
+          });
+      } else {
+        swal("Ok, we aren't deleted your Data!");
+      }
+    });
+  };
   //   console.log(myData, index);
   //  spot_name,
   //     country_name,
@@ -26,7 +53,9 @@ const TableBody = ({ myData, index }) => {
         </td>
 
         <td className="">
-          <MdDelete className="cursor-pointer p-2 text-4xl text-red-600 hover:bg-slate-200 rounded-full select-none" />
+          <button onClick={handleDelete}>
+            <MdDelete className="cursor-pointer p-2 text-4xl text-red-600 hover:bg-slate-200 rounded-full select-none" />
+          </button>
         </td>
       </tr>
     </>
