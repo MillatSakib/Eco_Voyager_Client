@@ -1,17 +1,6 @@
 import { NavLink } from "react-router-dom";
 
 const VeiwCard = ({ cardData }) => {
-  //  spot_name,
-  //     country_name,
-  //     location,
-  //     travel_time,
-  //     avg_cost,
-  //     vis_per_y,
-  //     email,
-  //     name,
-  //     img_url,
-  //     seasonality,
-  //     description,
   const descirption = cardData?.description?.substring(0, 150) + "  .....";
   const IdNumber = Number(cardData?._id);
   return (
