@@ -41,9 +41,8 @@ const Register = () => {
     }
     setPassError("");
     registerUser(email, password)
-      .then((userCredential) => {
+      .then(() => {
         // Signed up
-        const user = userCredential.user;
         updateProfile(auth.currentUser, {
           displayName: name,
           photoURL: imgUrl,
@@ -74,7 +73,7 @@ const Register = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Haven Hunt - Register</title>
+        <title>Eco Voyager - Register</title>
       </Helmet>
       <div>
         <div className="hero min-h-screen bg-base-200">

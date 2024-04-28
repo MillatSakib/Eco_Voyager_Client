@@ -7,7 +7,7 @@ const Footer = () => {
             Contact Us:
           </div>
           <div>
-            <p>Email: info@havenhunt.com | Phone: +1 (123) 456-7890</p>
+            <p>Email: info@ecovoyager.com | Phone: +1 (123) 456-7890</p>
           </div>
         </div>
         <div className="text-xl font-bold text-slate-300">Find Us</div>

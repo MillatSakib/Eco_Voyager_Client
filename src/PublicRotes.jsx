@@ -1,9 +1,7 @@
 import NotFoundPage from "./ErroPage/NotFound.jsx";
 import { createBrowserRouter } from "react-router-dom";
 import Tamplate from "./Tamplate.jsx";
-// import Home from "./Home/Home.jsx";
-// import UpdateProfile from "./UpdateProfile/updateProfile.jsx";
-// import CartEstate from "./CartEstate/CartEstate.jsx";
+import Home from "./Home/Home.jsx";
 import Login from "./Auth/Login.jsx";
 import Register from "./Auth/Register.jsx";
 import PrivateRoutes from "./PrivateRoutes/MainPrivateRoutes.jsx";
@@ -20,14 +18,14 @@ const PublicRotes = () => {
       element: <Tamplate></Tamplate>,
       errorElement: <NotFoundPage></NotFoundPage>,
       children: [
-        //   {
-        //     path: "/",
-        //     loader: () =>
-        //       fetch(
-        //         `https://millatsakib.github.io/img-src/assignment%209/Data/assignment9.json`
-        //       ),
-        //     element: <Home></Home>,
-        //   },
+        {
+          path: "/",
+          loader: () =>
+            fetch(
+              `https://millatsakib.github.io/img-src/assignment%209/Data/assignment9.json`
+            ),
+          element: <Home></Home>,
+        },
         {
           path: "/all_tourist_spot",
           element: <All></All>,

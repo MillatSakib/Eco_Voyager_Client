@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import { FaRegEye } from "react-icons/fa";
@@ -8,8 +8,7 @@ import { AuthContext } from "../AuthProvider";
 const Login = () => {
   const [passError, setPassError] = useState("");
   const [showPass, setShowPass] = useState(true);
-  const { logInUser, GoogleSignIn, user, githubSignIn } =
-    useContext(AuthContext);
+  const { logInUser, GoogleSignIn, githubSignIn } = useContext(AuthContext);
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -34,7 +33,7 @@ const Login = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Haven Hunt - Login</title>
+        <title>Eco Voyager - Login</title>
       </Helmet>
       <div>
         <div className="hero min-h-screen bg-base-200">
