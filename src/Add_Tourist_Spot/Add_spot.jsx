@@ -89,13 +89,25 @@ const AddSpot = () => {
             <div className="label">
               <span className="label-text">Country Name</span>
             </div>
-            <input
+            {/* <input
               required
               name="country_name"
               type="text"
               placeholder="Country Name"
               className="input input-bordered w-full max-w-xs"
-            />
+            /> */}
+
+            <select id="dropdown" required name="country_name">
+              <option value="" disabled selected>
+                Select an item
+              </option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Cambodia">Cambodia</option>
+            </select>
           </label>
         </div>
 

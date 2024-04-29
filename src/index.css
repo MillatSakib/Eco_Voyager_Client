@@ -8,3 +8,15 @@
   font-weight: 400;
   font-style: normal;
 }
+
+#dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for default option */
+#dropdown option[disabled]:first-child {
+  color: #aaa;
+}

@@ -81,14 +81,47 @@ const MyAddedSpotEdit = () => {
             <div className="label">
               <span className="label-text">Country Name</span>
             </div>
-            <input
-              required
-              defaultValue={DefaultData.country_name}
-              name="country_name"
-              type="text"
-              placeholder="Country Name"
-              className="input input-bordered w-full max-w-xs"
-            />
+            <select id="dropdown" required name="country_name">
+              <option value="" disabled>
+                Select a Country
+              </option>
+              <option
+                value="Bangladesh"
+                selected={DefaultData.country_name === "Bangladesh"}
+              >
+                Bangladesh
+              </option>
+              <option
+                value="Thailand"
+                selected={DefaultData.country_name === "Thailand"}
+              >
+                Thailand
+              </option>
+              <option
+                value="Indonesia"
+                selected={DefaultData.country_name === "Indonesia"}
+              >
+                Indonesia
+              </option>
+              <option
+                value="Malaysia"
+                selected={DefaultData.country_name === "Malaysia"}
+              >
+                Malaysia
+              </option>
+              <option
+                value="Vietnam"
+                selected={DefaultData.country_name === "Vietnam"}
+              >
+                Vietnam
+              </option>
+              <option
+                value="Cambodia"
+                selected={DefaultData.country_name === "Cambodia"}
+              >
+                Cambodia
+              </option>
+            </select>
           </label>
         </div>
 
