@@ -13,7 +13,7 @@ const AddSpot = () => {
     const country_name = form.country_name.value;
     const location = form.location.value;
     const travel_time = form.travel_time.value;
-    const avg_cost = form.avg_cost.value;
+    const avg_cost = Number(form.avg_cost.value);
     const vis_per_y = form.vis_per_y.value;
     const email = form.email.value;
     const name = form.name.value;
