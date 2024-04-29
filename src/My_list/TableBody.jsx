@@ -2,6 +2,8 @@ import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import swal from "sweetalert";
+import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 const TableBody = ({ myData, index, loadApi, setLoadApi }) => {
   const handleDelete = () => {
@@ -50,17 +52,29 @@ const TableBody = ({ myData, index, loadApi, setLoadApi }) => {
         <td>{myData.country_name}</td>
         <td>{myData.location}</td>
         <td className="">
-          <NavLink to={`/my-added-spot-edit/${myData?._id}`}>
+          <NavLink
+            to={`/my-added-spot-edit/${myData?._id}`}
+            data-tooltip-id="update"
+            data-tooltip-content="Update Data"
+            data-tooltip-place="bottom"
+          >
             <FaEdit className="cursor-pointer p-2 text-4xl text-green-600 hover:bg-slate-200 rounded-2xl select-none" />
           </NavLink>
         </td>
 
         <td className="">
-          <button onClick={handleDelete}>
+          <button
+            onClick={handleDelete}
+            data-tooltip-id="delete"
+            data-tooltip-content="Delete!"
+            data-tooltip-place="bottom"
+          >
             <MdDelete className="cursor-pointer p-2 text-4xl text-red-600 hover:bg-slate-200 rounded-full select-none" />
           </button>
         </td>
       </tr>
+      <Tooltip id="delete" />
+      <Tooltip id="update" />
     </>
   );
 };
