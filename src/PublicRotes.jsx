@@ -11,6 +11,7 @@ import MyList from "./My_list/MyList.jsx";
 import All from "./All_Tourist_Spot/All.jsx";
 import MyAddedSpotEdit from "./My_added_spot_edit/MyAddedSpotEdit.jsx";
 import ViewDetails from "./View_Details/ViewDetails.jsx";
+import AllTouristSpotCountry from "./AllTouristSpot_Country/AllTouristSpotCountry.jsx";
 
 const PublicRotes = () => {
   const routes = createBrowserRouter([
@@ -68,6 +69,18 @@ const PublicRotes = () => {
           ),
           loader: ({ params }) =>
             fetch(`https://voyager-omega.vercel.app/myAddedSpot/${params.id}`),
+        },
+        {
+          path: "/tourist_spot_on_country/:name",
+          element: (
+            <PrivateRoutes>
+              <AllTouristSpotCountry></AllTouristSpotCountry>
+            </PrivateRoutes>
+          ),
+          loader: ({ params }) =>
+            fetch(
+              `https://voyager-omega.vercel.app/allTouristSpot/${params.name}`
+            ),
         },
 
         {

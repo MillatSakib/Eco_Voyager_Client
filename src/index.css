@@ -20,3 +20,58 @@
 #dropdown option[disabled]:first-child {
   color: #aaa;
 }
+
+.img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  transition: transform 0.3s; /* Add a transition for smooth scaling */
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container .child_div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 54, 54, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s; /* Add a transition for opacity and transform */
+  top: 0;
+  left: 0;
+  transform: translateY(-100%); /* Initially, move the .child_div up */
+}
+
+.img-container:hover img {
+  transform: scale(1.5);
+}
+
+.img-container:hover .child_div {
+  opacity: 1;
+  transform: translateY(0); /* Move the .child_div down when hovering */
+}
+
+.parent_div {
+  width: 25%;
+  color: white;
+  padding: 1px;
+}
+
+.download {
+  text-align: center;
+}
+
+.download a {
+  text-decoration: none;
+  background-color: rgb(255, 47, 47);
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+}
