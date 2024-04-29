@@ -10,7 +10,7 @@ import AddSpot from "./Add_Tourist_Spot/Add_spot.jsx";
 import MyList from "./My_list/MyList.jsx";
 import All from "./All_Tourist_Spot/All.jsx";
 import MyAddedSpotEdit from "./My_added_spot_edit/MyAddedSpotEdit.jsx";
-// import ViewDetails from "./ViewDetails/ViewDetails.jsx";
+import ViewDetails from "./View_Details/ViewDetails.jsx";
 
 const PublicRotes = () => {
   const routes = createBrowserRouter([
@@ -29,8 +29,6 @@ const PublicRotes = () => {
         },
         {
           path: "/all_tourist_spot",
-          loader: () =>
-            fetch("https://voyager-omega.vercel.app/allTouristSpots"),
           element: <All></All>,
         },
         {
@@ -76,18 +74,18 @@ const PublicRotes = () => {
             fetch(`https://voyager-omega.vercel.app/myAddedSpot/${params.id}`),
         },
 
-        //   {
-        //     path: "/property/:propertyID",
-        //     element: (
-        //       <PrivateRoutes>
-        //         <ViewDetails></ViewDetails>
-        //       </PrivateRoutes>
-        //     ),
-        //     loader: ({ params }) =>
-        //       fetch(
-        //         `https://millatsakib.github.io/img-src/assignment%209/Data/00${params.propertyID}.json`
-        //       ),
-        //   },
+        {
+          path: "/tourist_spot_details/:spotID",
+          element: (
+            <PrivateRoutes>
+              <ViewDetails></ViewDetails>
+            </PrivateRoutes>
+          ),
+          loader: ({ params }) =>
+            fetch(
+              `https://voyager-omega.vercel.app/tourist_spot_details/${params.spotID}`
+            ),
+        },
       ],
     },
   ]);

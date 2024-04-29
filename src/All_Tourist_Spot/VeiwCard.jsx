@@ -2,7 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const VeiwCard = ({ cardData }) => {
   const descirption = cardData?.description?.substring(0, 150) + "  .....";
-  const IdNumber = Number(cardData?._id);
+  const IdNumber = cardData?._id;
+
   return (
     <div
       className="hover:shadow-2xl border-2 rounded-lg flex flex-col justify-between"
@@ -45,7 +46,7 @@ const VeiwCard = ({ cardData }) => {
 
         <div className="mx-4 mt-auto mb-6">
           <NavLink
-            to={`/view_details/${IdNumber}`}
+            to={`/tourist_spot_details/${IdNumber}`}
             className="btn bg-orange-500 text-white w-full rounded-2xl"
           >
             View Details
