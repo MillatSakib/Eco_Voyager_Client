@@ -18,7 +18,7 @@ const FAQ = () => {
       </div>
 
       <div
-        tabIndex={0}
+        tabIndex={1}
         className="collapse collapse-plus border border-base-300 bg-base-200 my-1"
       >
         <div className="collapse-title text-xl font-medium">
@@ -34,7 +34,7 @@ const FAQ = () => {
       </div>
 
       <div
-        tabIndex={0}
+        tabIndex={2}
         className="collapse collapse-plus border border-base-300 bg-base-200 my-1"
       >
         <div className="collapse-title text-xl font-medium">
@@ -50,7 +50,7 @@ const FAQ = () => {
       </div>
 
       <div
-        tabIndex={0}
+        tabIndex={3}
         className="collapse collapse-plus border border-base-300 bg-base-200 my-1"
       >
         <div className="collapse-title text-xl font-medium">
@@ -66,7 +66,7 @@ const FAQ = () => {
       </div>
 
       <div
-        tabIndex={0}
+        tabIndex={4}
         className="collapse collapse-plus border border-base-300 bg-base-200 my-1"
       >
         <div className="collapse-title text-xl font-medium">
@@ -82,7 +82,7 @@ const FAQ = () => {
       </div>
 
       <div
-        tabIndex={0}
+        tabIndex={5}
         className="collapse collapse-plus border border-base-300 bg-base-200 my-1"
       >
         <div className="collapse-title text-xl font-medium">

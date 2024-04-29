@@ -52,7 +52,7 @@ const MyAddedSpotEdit = () => {
           autoClose: 5000,
           hideProgressBar: false,
         });
-        formRef.current.reset(); // Reset the form after successful submission
+        // Reset the form after successful submission
       })
       .catch((error) => {
         toast.error(error, {
