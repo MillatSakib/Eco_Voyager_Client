@@ -54,7 +54,7 @@ const Footer = () => {
           src="https://millatsakib.github.io/img-src/Assignment10/logo.png"
           className="h-12"
         ></img>
-
+        Eco Voyager
         <p>Copyright © 2024 - All right reserved by Eco Voyager</p>
       </aside>
     </footer>

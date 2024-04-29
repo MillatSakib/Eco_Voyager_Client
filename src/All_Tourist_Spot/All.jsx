@@ -1,3 +1,4 @@
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import VeiwCard from "./VeiwCard";
 import { useEffect, useState } from "react";
 
@@ -14,7 +15,10 @@ const All = () => {
   }, []);
 
   return (
-    <>
+    <HelmetProvider>
+      <Helmet>
+        <title>Eco Voyager - All Tourist Spot</title>
+      </Helmet>
       {loader ? (
         <div className="flex items-center justify-center">
           {" "}
@@ -32,7 +36,7 @@ const All = () => {
           </div>
         </div>
       )}
-    </>
+    </HelmetProvider>
   );
 };
 
