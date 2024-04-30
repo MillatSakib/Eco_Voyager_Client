@@ -21,7 +21,7 @@ const MyAddedTouristSpot = () => {
       {loading ? (
         <div className="flex items-center justify-center">
           {" "}
-          <span className="loading loading-spinner loading-lg"></span>
+          <span className="loading loading-spinner loading-lg text-success"></span>
         </div>
       ) : myListData.length === 0 ? (
         <div className="text-2xl md:text-3xl lg:text-5xl text-error flex items-center justify-center my-16 font-bold">

@@ -7,7 +7,9 @@ const PrivateRoutes = ({ children }) => {
   const { user, loading, routeState, setRouteState } = useContext(AuthContext);
   setRouteState(location.pathname);
   if (loading) {
-    return <span className="loading loading-spinner loading-lg mx-auto"></span>;
+    return (
+      <span className="loading loading-spinner loading-lg mx-auto text-success"></span>
+    );
   }
   if (user) {
     return children;

@@ -17,7 +17,7 @@ const TouristSpots = () => {
       {loader ? (
         <div className="flex items-center justify-center">
           {" "}
-          <span className="loading loading-spinner loading-lg"></span>
+          <span className="loading loading-spinner loading-lg text-success"></span>
         </div>
       ) : (
         <div className="w-[95%] md:w-[80%] lg:w-[100%] text-center mx-auto text-base-content mb-10">
