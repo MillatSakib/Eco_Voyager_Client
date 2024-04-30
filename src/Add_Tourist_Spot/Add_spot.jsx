@@ -20,19 +20,6 @@ const AddSpot = () => {
     const img_url = form.img_url.value;
     const seasonality = form.seasonality.value;
     const description = form.description.value;
-    // console.log(
-    // spot_name,
-    // country_name,
-    // location,
-    // travel_time,
-    // avg_cost,
-    // vis_per_y,
-    // email,
-    // name,
-    // img_url,
-    // seasonality,
-    // description
-    // );
     const spotDetails = {
       spot_name,
       country_name,
@@ -86,7 +73,7 @@ const AddSpot = () => {
                 name="spot_name"
                 type="text"
                 placeholder="Spot Name"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
 
@@ -102,7 +89,12 @@ const AddSpot = () => {
               className="input input-bordered w-full max-w-xs"
             /> */}
 
-              <select id="dropdown" required name="country_name">
+              <select
+                id="dropdown"
+                required
+                name="country_name"
+                className="text-base-content bg-base-100"
+              >
                 <option value="" disabled selected>
                   Select an item
                 </option>
@@ -126,7 +118,7 @@ const AddSpot = () => {
                 required
                 name="location"
                 placeholder="Location"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
 
@@ -139,7 +131,7 @@ const AddSpot = () => {
                 name="travel_time"
                 type="number"
                 placeholder="Travel Time (eg : 7)"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
           </div>
@@ -154,7 +146,7 @@ const AddSpot = () => {
                 name="avg_cost"
                 type="number"
                 placeholder="Avarage Cost"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
 
@@ -167,7 +159,7 @@ const AddSpot = () => {
                 name="vis_per_y"
                 type="number"
                 placeholder="Vistitors/Year"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
           </div>
@@ -181,7 +173,7 @@ const AddSpot = () => {
                 name="email"
                 type="email"
                 placeholder=""
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
                 defaultValue={user?.email}
                 disabled
               />
@@ -195,7 +187,7 @@ const AddSpot = () => {
                 name="name"
                 type="text"
                 defaultValue={user?.displayName}
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
                 disabled
               />
             </label>
@@ -211,7 +203,7 @@ const AddSpot = () => {
                 name="img_url"
                 type="text"
                 placeholder="Image URL"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
 
@@ -224,7 +216,7 @@ const AddSpot = () => {
                 name="seasonality"
                 type="text"
                 placeholder="Seasonality (eg : summer)"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
           </div>
@@ -237,7 +229,7 @@ const AddSpot = () => {
                 required
                 name="description"
                 placeholder="Write details here..."
-                className="textarea textarea-bordered textarea-lg w-full"
+                className="textarea textarea-bordered textarea-lg w-full text-base-content bg-base-100"
               ></textarea>
             </label>
           </div>

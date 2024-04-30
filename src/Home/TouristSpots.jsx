@@ -20,7 +20,7 @@ const TouristSpots = () => {
           <span className="loading loading-spinner loading-lg"></span>
         </div>
       ) : (
-        <div className="w-[95%] md:w-[80%] lg:w-[90%] text-center mx-auto text-slate-600 mb-10">
+        <div className="w-[95%] md:w-[80%] lg:w-[90%] text-center mx-auto text-base-content mb-10">
           <div className="my-10 text-2xl md:text-3xl font-semibold">
             All Tourist Spot
           </div>

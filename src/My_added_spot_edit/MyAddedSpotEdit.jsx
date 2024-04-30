@@ -78,7 +78,7 @@ const MyAddedSpotEdit = () => {
                 name="spot_name"
                 type="text"
                 placeholder="Spot Name"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
 
@@ -86,7 +86,12 @@ const MyAddedSpotEdit = () => {
               <div className="label">
                 <span className="label-text">Country Name</span>
               </div>
-              <select id="dropdown" required name="country_name">
+              <select
+                id="dropdown"
+                required
+                name="country_name"
+                className="text-base-content bg-base-100"
+              >
                 <option value="" disabled>
                   Select a Country
                 </option>
@@ -141,7 +146,7 @@ const MyAddedSpotEdit = () => {
                 defaultValue={DefaultData.location}
                 name="location"
                 placeholder="Location"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
 
@@ -155,7 +160,7 @@ const MyAddedSpotEdit = () => {
                 name="travel_time"
                 type="number"
                 placeholder="Travel Time (eg : 7)"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
           </div>
@@ -171,7 +176,7 @@ const MyAddedSpotEdit = () => {
                 name="avg_cost"
                 type="number"
                 placeholder="Avarage Cost"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
 
@@ -185,7 +190,7 @@ const MyAddedSpotEdit = () => {
                 name="vis_per_y"
                 type="number"
                 placeholder="Vistitors/Year"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
           </div>
@@ -199,7 +204,7 @@ const MyAddedSpotEdit = () => {
                 name="email"
                 type="email"
                 placeholder=""
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
                 defaultValue={user?.email}
                 disabled
               />
@@ -213,7 +218,7 @@ const MyAddedSpotEdit = () => {
                 name="name"
                 type="text"
                 defaultValue={user?.displayName}
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
                 disabled
               />
             </label>
@@ -230,7 +235,7 @@ const MyAddedSpotEdit = () => {
                 name="img_url"
                 type="text"
                 placeholder="Image URL"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
 
@@ -244,7 +249,7 @@ const MyAddedSpotEdit = () => {
                 name="seasonality"
                 type="text"
                 placeholder="Seasonality (eg : summer)"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-base-content bg-base-100"
               />
             </label>
           </div>
@@ -258,7 +263,7 @@ const MyAddedSpotEdit = () => {
                 defaultValue={DefaultData.description}
                 name="description"
                 placeholder="Write details here..."
-                className="textarea textarea-bordered textarea-lg w-full"
+                className="textarea textarea-bordered textarea-lg w-full text-base-content bg-base-100"
               ></textarea>
             </label>
           </div>

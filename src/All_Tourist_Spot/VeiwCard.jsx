@@ -14,14 +14,16 @@ const VeiwCard = ({ cardData }) => {
           <img src={cardData?.img_url} className="w-full rounded-lg"></img>
         </div>
         <div className="m-3 flex justify-between border-b-2 pb-2">
-          <div className="text-[1rem] text-slate-600 font-semibold">
+          <div className="text-[1rem] text-base-content font-semibold">
             {cardData.spot_name.toUpperCase()}
           </div>
-          <div className="text-[1rem] text-slate-600 font-semibold">
+          <div className="text-[1rem] text-base-content font-semibold">
             Visitors: {cardData.vis_per_y} people/year
           </div>
         </div>
-        <div className="my-3 mx-3 pb-3 border-b-2 text-left">{descirption}</div>
+        <div className="my-3 mx-3 pb-3 border-b-2 text-left text-base-content">
+          {descirption}
+        </div>
         <div className="my-3 mx-3 justify-between flex">
           <div className="text-xs text-blue-500 font-semibold">
             Location :&nbsp;{cardData.location}

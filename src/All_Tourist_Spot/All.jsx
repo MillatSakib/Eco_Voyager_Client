@@ -31,7 +31,7 @@ const All = () => {
           <div className="z-50">
             <Dropdown setSort={setSort}></Dropdown>
           </div>
-          <div className="my-10 text-2xl md:text-3xl font-semibold">
+          <div className="my-10 text-2xl md:text-3xl font-semibold text-base-content">
             All Tourist Spot
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

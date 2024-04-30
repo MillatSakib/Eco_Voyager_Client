@@ -29,13 +29,13 @@ const ViewDetails = () => {
           Situated in {detailData.country_name}, {detailData.location}
         </div>
         <div className="my-4 mx-4">
-          <h2 className="text-3xl my-2 font-bold text-slate-800">
+          <h2 className="text-3xl my-2 font-bold text-base-content">
             Description
           </h2>
-          <p>{detailData.description}</p>
+          <p className="text-base-content">{detailData.description}</p>
         </div>
-        <div>
-          <span className="font-semibold ml-4 text-slate-700">
+        <div className="text-base-content">
+          <span className="font-semibold ml-4 text-base-content">
             You need to take time
           </span>
           &nbsp;
@@ -49,8 +49,8 @@ const ViewDetails = () => {
             Seasonality: {detailData.seasonality}
           </div>
         </div>
-        <div className="text-right my-6">
-          <span className="font-semibold">Added by </span>
+        <div className="text-right my-6 text-base-content">
+          <span className="font-semibold text-base-content">Added by </span>
           {detailData.name}
         </div>
       </div>

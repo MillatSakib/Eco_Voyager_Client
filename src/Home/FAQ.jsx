@@ -1,6 +1,6 @@
 const FAQ = () => {
   return (
-    <div>
+    <div className="text-base-content">
       <div
         tabIndex={0}
         className="collapse collapse-plus border border-base-300 bg-base-200 my-1"

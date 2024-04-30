@@ -23,6 +23,10 @@ const MyAddedTouristSpot = () => {
           {" "}
           <span className="loading loading-spinner loading-lg"></span>
         </div>
+      ) : myListData.length === 0 ? (
+        <div className="text-2xl md:text-3xl lg:text-5xl text-error flex items-center justify-center my-16 font-bold">
+          There have no data you have added yet!!
+        </div>
       ) : (
         <div>
           <div className="overflow-x-auto mx-8">

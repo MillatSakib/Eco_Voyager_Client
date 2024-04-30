@@ -46,7 +46,7 @@ const TableBody = ({ myData, index, loadApi, setLoadApi }) => {
   //     description,
   return (
     <>
-      <tr>
+      <tr className="text-base-content">
         <th>{index + 1}</th>
         <td>{myData.spot_name}</td>
         <td>{myData.country_name}</td>
@@ -58,7 +58,7 @@ const TableBody = ({ myData, index, loadApi, setLoadApi }) => {
             data-tooltip-content="Update Data"
             data-tooltip-place="bottom"
           >
-            <FaEdit className="cursor-pointer p-2 text-4xl text-green-600 hover:bg-slate-200 rounded-2xl select-none" />
+            <FaEdit className="cursor-pointer p-2 text-4xl text-green-600 hover:bg-base-200 rounded-2xl select-none" />
           </NavLink>
         </td>
 
@@ -69,7 +69,7 @@ const TableBody = ({ myData, index, loadApi, setLoadApi }) => {
             data-tooltip-content="Delete!"
             data-tooltip-place="bottom"
           >
-            <MdDelete className="cursor-pointer p-2 text-4xl text-red-600 hover:bg-slate-200 rounded-full select-none" />
+            <MdDelete className="cursor-pointer p-2 text-4xl text-red-600 hover:bg-base-200 rounded-full select-none" />
           </button>
         </td>
       </tr>

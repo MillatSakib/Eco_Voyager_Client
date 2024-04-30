@@ -24,7 +24,7 @@ function Home() {
       </div>
 
       <div className="mt-16">
-        <div className="text-center my-6 text-2xl md:text-3xl lg:text-4xl font-bold text-slate-600">
+        <div className="text-center my-6 text-2xl md:text-3xl lg:text-4xl font-bold text-base-content">
           Our Specialties
         </div>
         <OurSpeciality></OurSpeciality>
@@ -34,7 +34,7 @@ function Home() {
         <TouristSpots></TouristSpots>
       </div>
       <div className="my-10 w-[95%] md:w-[90%] lg:w-[80%] lg:max-w-[1250px] mx-auto ">
-        <div className="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold text-center text-slate-800">
+        <div className="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold text-center text-base-content">
           Tourist Spot in Country
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -44,7 +44,7 @@ function Home() {
         </div>
       </div>
       <div className="my-10 w-[95%] md:w-[90%] lg:w-[80%] mx-auto">
-        <div className="text-center text-slate-800 font-bold text-2xl md:text-3xl lg:text-3xl mb-8">
+        <div className="text-center text-base-content font-bold text-2xl md:text-3xl lg:text-3xl mb-8">
           Frequently Asked Question
         </div>
         <FAQ></FAQ>

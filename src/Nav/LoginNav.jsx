@@ -23,7 +23,7 @@ const LoginNav = () => {
           tabIndex={0}
           className="dropdown-content z-[99] menu p-2 shadow bg-base-100 rounded-box w-max"
         >
-          <li className="px-4 py-2">
+          <li className="px-4 py-2 text-base-content">
             {user?.displayName ? user.displayName : "No data found."}
           </li>
         </ul>

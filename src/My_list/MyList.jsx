@@ -8,7 +8,7 @@ const MyList = () => {
         <title>Eco Voyager - My List</title>
       </Helmet>
       <div>
-        <div className="text-2xl md:text-3xl text-center font-bold underline mb-6 lg:mb-8">
+        <div className="text-2xl md:text-3xl text-center font-bold underline mb-6 lg:mb-8 text-base-content">
           Here All Your Added Tourist Spot
         </div>
         <MyAddedTouristSpot></MyAddedTouristSpot>

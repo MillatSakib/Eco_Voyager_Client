@@ -37,16 +37,16 @@ function Dropdown({ setSort }) {
       {isOpen && (
         <div
           id="dropdown"
-          className="absolute left-[calc(50%-6rem)] mx-auto divide-gray-100 rounded-lg w-48 bg-slate-50 z-50"
+          className="absolute left-[calc(50%-6rem)] mx-auto divide-base-200 rounded-lg w-48 bg-base-100 z-50"
         >
           <ul
-            className="py-2 text-sm text-gray-700"
+            className="py-2 text-sm text-base-content"
             aria-labelledby="dropdownDefaultButton"
           >
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100"
+                className="block px-4 py-2 hover:bg-base-200"
                 onClick={() => {
                   setSort(1);
                   setIsOpen(false);
@@ -58,7 +58,7 @@ function Dropdown({ setSort }) {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 hover:bg-gray-100"
+                className="block px-4 py-2 hover:bg-base-200"
                 onClick={() => {
                   setSort(-1);
                   setIsOpen(false);
