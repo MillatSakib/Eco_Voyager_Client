@@ -17,7 +17,7 @@ const Nav = () => {
   return (
     <div>
       <div className="navbar bg-base-100">
-        <div className="flex-1 md:flex-auto navbar-start">
+        <div className="flex-1 md:flex-auto md:navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -126,7 +126,7 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <div className="flex-none md:flex-auto navbar-end gap-2 mr-0 md:mr-4">
+        <div className="flex-none md:flex-auto md:navbar-end gap-2 mr-0 md:mr-4">
           <div>
             <label className="cursor-pointer grid place-items-center">
               <input
