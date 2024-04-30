@@ -30,7 +30,7 @@ function Home() {
         <OurSpeciality></OurSpeciality>
       </div>
 
-      <div className="my-10 w-[95%] md:w-[90%] lg:w-[80%] lg:max-w-[1250px] mx-auto">
+      <div className="my-10 w-[95%] md:w-[90%] lg:w-[85%] mx-auto">
         <TouristSpots></TouristSpots>
       </div>
       <div className="my-10 w-[95%] md:w-[90%] lg:w-[80%] lg:max-w-[1250px] mx-auto ">
