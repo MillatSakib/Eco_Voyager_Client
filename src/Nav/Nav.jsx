@@ -17,7 +17,7 @@ const Nav = () => {
   return (
     <div>
       <div className="navbar bg-base-100">
-        <div className="navbar-start">
+        <div className="flex-1 md:flex-auto navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -79,7 +79,7 @@ const Nav = () => {
           </div>
           <NavLink
             to="/"
-            className="btn btn-ghost text-2xl text-blue-500 font-bold"
+            className="btn btn-ghost text-2xl text-blue-500 font-bold hidden md:flex"
           >
             <span className="text-red-500">Eco</span>
             <span className="text-blue-400"> Voyager</span>
@@ -126,7 +126,7 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end gap-2 mr-0 md:mr-4">
+        <div className="flex-none md:flex-auto navbar-end gap-2 mr-0 md:mr-4">
           <div>
             <label className="cursor-pointer grid place-items-center">
               <input
