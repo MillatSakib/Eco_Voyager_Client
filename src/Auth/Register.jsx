@@ -93,7 +93,7 @@ const Register = () => {
                     name="name"
                     type="text"
                     placeholder="Name"
-                    className="input input-bordered"
+                    className="input input-bordered text-base-content bg-base-100"
                     required
                   />
                 </div>
@@ -105,7 +105,7 @@ const Register = () => {
                     name="imgUrl"
                     type="text"
                     placeholder="Image URL"
-                    className="input input-bordered"
+                    className="input input-bordered text-base-content bg-base-100"
                     required
                   />
                 </div>
@@ -117,7 +117,7 @@ const Register = () => {
                     name="email"
                     type="email"
                     placeholder="Email"
-                    className="input input-bordered"
+                    className="input input-bordered text-base-content bg-base-100"
                     required
                   />
                 </div>
@@ -129,13 +129,13 @@ const Register = () => {
                     type={showPass ? "password" : "text"}
                     name="password"
                     placeholder="Password"
-                    className="input input-bordered"
+                    className="input input-bordered text-base-content bg-base-100"
                     required
                   />
                   <FaRegEye
                     className={
                       showPass
-                        ? "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none"
+                        ? "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none text-base-content bg-base-100"
                         : "hidden"
                     }
                     onClick={() => setShowPass(!showPass)}
@@ -144,7 +144,7 @@ const Register = () => {
                     className={
                       showPass
                         ? "hidden"
-                        : "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none"
+                        : "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none text-base-content bg-base-100"
                     }
                     onClick={() => setShowPass(!showPass)}
                   />
@@ -158,13 +158,13 @@ const Register = () => {
                     type={showPassC ? "password" : "text"}
                     name="confirmPassword"
                     placeholder="Password"
-                    className="input input-bordered"
+                    className="input input-bordered text-base-content bg-base-100"
                     required
                   />
                   <FaRegEye
                     className={
                       showPassC
-                        ? "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none"
+                        ? "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none text-base-content bg-base-100"
                         : "hidden"
                     }
                     onClick={() => setShowPassC(!showPassC)}
@@ -173,7 +173,7 @@ const Register = () => {
                     className={
                       showPassC
                         ? "hidden"
-                        : "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none"
+                        : "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none text-base-content bg-base-100"
                     }
                     onClick={() => setShowPassC(!showPassC)}
                   />

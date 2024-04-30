@@ -53,7 +53,7 @@ const Login = () => {
                     name="email"
                     type="email"
                     placeholder="Email"
-                    className="input input-bordered"
+                    className="input input-bordered text-base-content bg-base-100"
                     required
                   />
                 </div>
@@ -65,13 +65,13 @@ const Login = () => {
                     name="password"
                     type={showPass ? "password" : "text"}
                     placeholder="Password"
-                    className="input input-bordered"
+                    className="input input-bordered text-base-content bg-base-100"
                     required
                   />
                   <FaRegEye
                     className={
                       showPass
-                        ? "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none"
+                        ? "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none text-base-content bg-base-100"
                         : "hidden"
                     }
                     onClick={() => setShowPass(!showPass)}
@@ -80,7 +80,7 @@ const Login = () => {
                     className={
                       showPass
                         ? "hidden"
-                        : "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none"
+                        : "absolute right-4 top-[3.2rem] hover:cursor-pointer select-none text-base-content bg-base-100"
                     }
                     onClick={() => setShowPass(!showPass)}
                   />
