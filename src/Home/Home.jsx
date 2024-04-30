@@ -37,6 +37,14 @@ function Home() {
         <div className="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold text-center text-base-content">
           Tourist Spot in Country
         </div>
+        <div className="text-base-content w-[95%] md:w-[85%] lg:w-[70%] mx-auto text-center my-8 lg:my-10">
+          Explore Bangladesh's Sundarbans, Dhaka's energy, and Cox's Bazar's
+          beaches. Malaysia's Petronas Towers, Malacca's history, and Cameron
+          Highlands' greenery. Cambodia's Angkor Wat, Siem Reap's markets, and
+          Tonlé Sap Lake. Thailand's Bangkok temples, Phuket's beaches, and
+          Chiang Mai's jungles. Vietnam's Hanoi streets, Ha Long Bay, and Mekong
+          Delta markets.
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {countryData.map((countryData, index) => (
             <CountyCard countryData={countryData} key={index}></CountyCard>
