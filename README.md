@@ -2,12 +2,7 @@
 
 Live Site Link: [https://eco-voyager.netlify.app/](https://eco-voyager.netlify.app/)
 
-### Category: Southeast Asia
-
-### Package Used:
-
-- React Simple Typewriter (In Home Page)
-- React Tooltip (In My List Page)
+Server GitHub Link: [https://github.com/MillatSakib/Eco_Voyager_Server](https://github.com/MillatSakib/Eco_Voyager_Server)
 
 ### Features:
 
@@ -20,6 +15,13 @@ Live Site Link: [https://eco-voyager.netlify.app/](https://eco-voyager.netlify.a
 - Build a dynamic and responsive user interface with React, providing an engaging experience for users to explore and interact with tourist spots.
 
 - Allow users to sort tourist spots based on average cost, enabling them to find spots that fit their budget preferences more easily.
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node install on your machine and properly work with CLI.
+- Install Git for clone and push your code in github.
 
 ### Project Installation:
 
