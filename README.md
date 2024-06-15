@@ -57,11 +57,11 @@ Then deploy your project.
 **Remider:** If you want to run the project directly then you can't do it. Because I use Environment variable for Keep the key of Firebase Credential. If you want to use this project then add the firebase credential like the format bellow:
 
 ```env
-VITE_API_KEY =  ***********************
-VITE_AUTH_DOMAIN = ******************
-VITE_PROJECT_ID = *****************
-VITE_STORAGE_BUCKET = ******************
-VITE_MESSAGING_SENDER_ID = ******************
-VITE_APP_ID = *********************
+VITE_API_KEY=***********************
+VITE_AUTH_DOMAIN=******************
+VITE_PROJECT_ID=*****************
+VITE_STORAGE_BUCKET=******************
+VITE_MESSAGING_SENDER_ID=******************
+VITE_APP_ID=*********************
 
 ```
